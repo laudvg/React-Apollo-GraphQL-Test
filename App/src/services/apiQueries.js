@@ -33,14 +33,6 @@ query GetPosts {
   }
 `
 
-// function getUser(client){
-//   client.query({query: GET_POSTS}).then(res =>console.log(res))
-// }
-
-// function getPosts(client){
-//   client.query({query: GET_USER}).then(res =>console.log(res));
-// }
-
 export {
   GET_POSTS,
   GET_USER

@@ -7,12 +7,12 @@ import Loading from './Loading.js';
 const UseUserProfile = () => {
   const { loading, error, data } = useQuery(GET_USER);
 
-  if (loading) return <Loading />;
+  if (loading) return <Loading/>;
   if (error) return <ErrorComponent />;
 
   return (
   
-      <div class="p-4 md:p-12 text-center lg:text-left">
+      <div className="p-4 md:p-12 text-center lg:text-left">
         <h1 className="text-3xl font-bold pt-8 lg:pt-0">{data.user.name}</h1>
         <div className="mx-auto lg:mx-0 w-4/5 pt-3 border-b-2 border-teal-500 opacity-25"></div>
         <div>
